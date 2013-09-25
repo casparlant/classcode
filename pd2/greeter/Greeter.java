@@ -12,10 +12,35 @@ public class Greeter {
     //private String greeting="Hello"; 
 
     private String greeting;
-
+    
     public Greeter(String g) {
-	greeting=g;
+	setGreeting(g);
     }
+
+    public Greeter() {
+	setGreeting("Hello");
+    }
+
+    // examples of method overloading
+    public void f() {
+    }
+    public void f(String s) {
+    }
+    public void f(String s,String s2) {
+    }
+    public void f(String s,int s2) {
+    }
+    public void f(int s,String s2) {
+    }
+    /*
+      but this one doesn't work becasue
+      we've already used String,String -
+      it's about the types, not the names
+
+    public void f(String s2,String s1) {
+    }
+    */
+    
 
     public void setGreeting(String greet) {
 	greeting = greet;

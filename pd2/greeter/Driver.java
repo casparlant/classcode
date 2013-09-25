@@ -21,7 +21,8 @@ public class Driver {
 	*/
 
 	g = new Greeter("Get lost");
-
+	g2 = new Greeter();
 	System.out.println(g.greet("Tom"));
+	System.out.println(g2.greet("Sarah"));
     }
 }
