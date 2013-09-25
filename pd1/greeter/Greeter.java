@@ -8,9 +8,32 @@ public class Greeter {
     //private String greeting="default"; 
 
     private String greeting;
+
+    /* 
+       Examples of overloading 
+       
+       public void f() {
+       }
+       public void f(String name){
+       }
+       public void f(String name, String name2) {
+       }
+       public void f(int name) {
+       }
+       
+       This one won't work -- String String is
+       already used
+       public void f(String name2, String name1) {
+       }
+    */
+
     
     public Greeter(String g) {
-	greeting = g;
+	setGreeting(g);
+    }
+
+    public Greeter() {
+	setGreeting("hello");
     }
 
     public void setGreeting(String greet) {
