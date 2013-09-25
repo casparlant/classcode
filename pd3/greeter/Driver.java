@@ -21,8 +21,12 @@ public class Driver {
 	System.out.println(g.greet("Alan"));
 	System.out.println(g2.greet("Sue"));
 	*/
-	g = new Greeter("Hello");
+	g2 = new Greeter();
+	g = new Greeter("Howdy");
 	System.out.println(g.greet("Tom"));
+	System.out.println(g2.greet("Sue"));
+
+
 	
     }
 }
