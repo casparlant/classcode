@@ -1,34 +1,14 @@
 import java.io.*;
 import java.util.*;
 
-public class Greeter {
-    private String happy,sad;
-    
-    private void initGreeter(String h, String s) {
-	setHappy(h);
-	setSad(s);
+public class Driver {
+    public static void main(String[] args) {
+	//Greeter g = new Greeter("howdy","get lost");
+	Greeter g = new Greeter();
+	System.out.println(g.greetHappy("Fred"));
+	System.out.println(g.greetSad("Fred"));
     }
 
-    public Greeter() {
-	initGreeter("Howdy","Get Lost");
-    }
-
-    public Greeter(String h,String s) {
-	initGreeter(h,s);
-    }
-
-    public void setHappy(String message) {
-	happy = message;
-    }
-
-    public String greetHappy(String name) {
-	return happy+" "+name;
-    }
-
-    public void setSad(String message) {
-	sad = message;
-    }
-    public String greetSad(String name) {
-	return sad+" "+name;
-    }
 }
+
+
