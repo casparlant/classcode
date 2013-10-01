@@ -14,6 +14,8 @@ public class Driver {
 	result = g2.greet("Sarah");
 	System.out.println(result);
 
+	g2 = new Greeter("sub");
+	System.out.println(g2.greet("harry"));
 	/* 1. Try:
 	   g.setGreeting("Howdy");
 	   g.greet("Tom");

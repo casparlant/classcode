@@ -8,6 +8,13 @@ public class Greeter {
        test, then change back 
     */
 
+    public Greeter(String g) {
+	greeting = g;
+    }
+    public Greeter() {
+	greeting = "hey";
+    }
+    
 
     /* 3. change public to private,
        test, then change back 
