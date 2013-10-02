@@ -26,10 +26,8 @@ public class Coin {
 	return face;
     }
 
-    public boolean sameFace(Coin other) {
-	// complete this method
-	return false ; // placeholder
-
+    public boolean equals(Coin other) {
+	return face.equals(other.getFace());
     }
     
 }
