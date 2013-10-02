@@ -1,15 +1,20 @@
 
 public class Driver {
     public static void main(String[] args) {
-	Coin c1 = new Coin();
-	Coin c2 = new Coin("Tails");
-	Coin c3 = new Coin("Heads");
+	Coin head1 = new Coin();
+	String s = new String("Tails");
+	Coin tail = new Coin(s);
+	s = new String("Heads");
+	Coin head2 = new Coin(s);
 	
-	System.out.println(c1.getFace()+" "+c2.getFace()+" "+c3.getFace());
+	System.out.println(head1.getFace()+" "+tail.getFace()+" "+head2.getFace());
 
-	System.out.println(c1.sameFace(c2));
-	System.out.println(c1.sameFace(c3));
-	System.out.println(c2.sameFace(c3));
+	System.out.println(head1.sameFace(tail));
+	System.out.println(head1.sameFace(head2));
+	System.out.println(tail.sameFace(head2));
+	System.out.println(head2.sameFace(head1));
+	
+	
 
     }
 }
