@@ -12,10 +12,10 @@ public class BankAccount {
 
     public void deposit(double amt) {
 	// if to make sure amt > 0 would be better
-	balance = balance = amt;
+	balance = balance + amt;
     }
 
-    public void withdraw(int amt) {
+    public void withdraw(double amt) {
 	// this if is important
 	if (balance >= amt) {
 	    balance = balance - amt;
@@ -29,7 +29,7 @@ public class BankAccount {
     public void takeMoneyFrom(BankAccount other, double amt) {
 	if (other.balance >= amt) {
 	    other.withdraw(amt);
-	    deposit(amt);
+	    this.deposit(amt);
 	}
     }
 
