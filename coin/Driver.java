@@ -1,15 +1,18 @@
 
 public class Driver {
     public static void main(String[] args) {
-	Coin c1 = new Coin();
-	Coin c2 = new Coin("Tails");
-	Coin c3 = new Coin("Heads");
-	
-	System.out.println(c1.getFace()+" "+c2.getFace()+" "+c3.getFace());
+	Coin q = new Coin(25);
+	Coin d = new Coin(10);
+	Coin n = new Coin(5);
 
-	System.out.println(c1.sameFace(c2));
-	System.out.println(c1.sameFace(c3));
-	System.out.println(c2.sameFace(c3));
+	System.out.println(q.getValue());
+	System.out.println(q);
+	System.out.println(d);
+	System.out.println(n);
+
+	String s1 = "The Coin q is "+q;
+	System.out.println(s1);
+
 
     }
 }

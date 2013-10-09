@@ -4,6 +4,7 @@ public class Coin {
     private int tosses;
     private int heads;
     private double prob = 0.5; // another way to initialize
+    private int value;
 
     public void initCoin(String f, Double p) {
 	face = f;
@@ -12,6 +13,10 @@ public class Coin {
 	prob=p;
     }
 
+    public Coin(int v) {
+	value = v;
+	initCoin("Heads",0.5);
+    }
 
     public Coin() {
 	initCoin("Heads",0.5);
@@ -26,10 +31,16 @@ public class Coin {
 	return face;
     }
 
-    public boolean sameFace(Coin other) {
-	// complete this method
-	return false ; // placeholder
-
+    public boolean equals(Coin other) {
+	return face.equals(other.getFace());
     }
-    
+
+    public int getValue() {
+	return value;
+    }
+
+    public String toString() {
+	return ""+value+" cents";
+    }
+
 }
