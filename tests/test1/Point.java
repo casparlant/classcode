@@ -8,7 +8,7 @@ public class Point {
     private double x,y;
     
     /* An equivalent set method would have been ok */
-    public Point(double xcor,ycor) {
+    public Point(double xcor,double ycor) {
 	x = xcor;
 	y = ycor;
     }
