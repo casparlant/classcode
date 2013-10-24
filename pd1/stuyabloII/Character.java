@@ -3,7 +3,7 @@ import java.io.*;
 
 public class Character {
     protected int health;
-    private String name;
+    protected String name;
     private Random r = new Random();
 
     protected void init(String name, int health) {
@@ -11,19 +11,13 @@ public class Character {
 	this.health=health;
     }
 
-	
     public Character() {
-	init("unnamed characet",50+r.nextInt(50));
+	init("No Name",50);
     }
     
-    public Character(String n) {
-	init(n,50+r.nextInt(50));
+    public Character(String name) {
+	init(name,50);
     }
-
-    public Character(String n, int h) {
-	init(n,h);
-    }
-
 
     public String attack() {
 	return "Generic attack";
