@@ -10,17 +10,30 @@ public class Character {
 	this.name = name;
 	this.health=health;
     }
+<<<<<<< HEAD
     
     public Character() {
 	init("",10);
 
+=======
+
+    public Character() {
+	init("No Name",50);
+    }
+    
+    public Character(String name) {
+	init(name,50);
+>>>>>>> e7d31dbe616147544220ab7190c4456c3540bace
     }
     public Character(String name) {
 	this.name = name;
 
+<<<<<<< HEAD
     }
 
 
+=======
+>>>>>>> e7d31dbe616147544220ab7190c4456c3540bace
     public String attack() {
 	return "Generic attack";
     }

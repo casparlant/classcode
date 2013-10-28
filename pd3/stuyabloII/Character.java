@@ -1,9 +1,14 @@
 public class Character {
-    private int health;
-    private String name;
+    protected int health;
+    protected String name;
 
     public Character() {
-	name = "Unnamed Character";
+	name = "Hans Gruber";
+    }
+
+    public Character(String name) {
+	this.name = name;
+	this.health = 20;
     }
 
     public String toString() {

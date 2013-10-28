@@ -1,12 +1,20 @@
 public class Character {
    
     protected String name;
-    private int health;
+    protected int health;
+    
 
     public Character() {
-	name = "Unnamed Character";
+	name="Barry";
+	health=20;
     }
 
+    
+    public Character(String name) {
+	this.name = name;
+	this.health=20;
+    }
+    
     public String toString() {
 	return name;
     }
