@@ -7,5 +7,9 @@ public class Wizard extends Character{
 	return health;
     }
 
+    public Wizard(String name) {
+	super(name);
+    }
 
+    
 }
